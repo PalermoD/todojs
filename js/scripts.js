@@ -1,3 +1,11 @@
+var taskInput = document.getElementById("new-task");
+var addButton = document.getElementsByTagName("button")[0];
+var incompletTaskHolder = document.getElementById("incomplete-task");
+var completeTaskHolder = document.getElementById("completed-tasks"); 
+
+
+//EVENT HANDLERS 
+
 // add a new task
 var addTask = function(){
   //When button is pressed 
@@ -48,3 +56,6 @@ var taskIncomplet = function(){
        // when checkbox is not checked 
          // append the task list  item to the #incomplete-tasks
 }
+
+
+//Set the click handler to the addTask function
